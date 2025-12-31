@@ -1,9 +1,46 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwgpu37ogtrkj"]
+[gd_scene load_steps=9 format=3 uid="uid://dwgpu37ogtrkj"]
 
 [ext_resource type="Texture2D" uid="uid://bq1k12g6ddukn" path="res://assets/sprites/platforms.png" id="1_nus4p"]
+[ext_resource type="Texture2D" uid="uid://dho3t2eyb70b1" path="res://assets/pixel_adventure/Fan/On (24x8).png" id="2_lhsdm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nlgqw"]
 size = Vector2(32, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxl55"]
+atlas = ExtResource("2_lhsdm")
+region = Rect2(0, 0, 24, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u648r"]
+atlas = ExtResource("2_lhsdm")
+region = Rect2(24, 0, 24, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjas4"]
+atlas = ExtResource("2_lhsdm")
+region = Rect2(48, 0, 24, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7l5xm"]
+atlas = ExtResource("2_lhsdm")
+region = Rect2(72, 0, 24, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3e31s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxl55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u648r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjas4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7l5xm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
 
 [node name="yellowPlatform" type="AnimatableBody2D"]
 
@@ -16,3 +53,9 @@ region_rect = Rect2(16, 32, 32, 9)
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_nlgqw")
 one_way_collision = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 7)
+rotation = 3.1415927
+sprite_frames = SubResource("SpriteFrames_3e31s")
+autoplay = "default"
