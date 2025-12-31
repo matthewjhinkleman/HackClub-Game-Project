@@ -12,5 +12,6 @@ func _on_body_entered(body):
 
 
 func _on_timer_timeout():
+	GameManager.reset_level_score()
 	Engine.time_scale = 1.0
 	get_tree().reload_current_scene()
