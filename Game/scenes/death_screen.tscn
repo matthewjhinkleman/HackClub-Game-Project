@@ -11,23 +11,43 @@ script = ExtResource("1_mqh5l")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0.54509807, 0, 0, 0.6666667)
+color = Color(0.54509807, 0, 0, 0.78431374)
 
-[node name="Label" type="Label" parent="."]
-offset_top = 286.0
+[node name="YouDied" type="Label" parent="."]
+offset_top = 235.0
 offset_right = 1920.0
-offset_bottom = 421.0
+offset_bottom = 370.0
 theme_override_fonts/font = ExtResource("1_dwo6e")
 theme_override_font_sizes/font_size = 134
 text = "You Died!"
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="."]
-offset_top = 587.0
+[node name="PressStart" type="Label" parent="."]
+offset_top = 756.0
 offset_right = 1920.0
-offset_bottom = 722.00006
+offset_bottom = 851.0
 theme_override_fonts/font = ExtResource("2_mqh5l")
 theme_override_font_sizes/font_size = 94
 text = "Press START to retry"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TotalCoins" type="Label" parent="."]
+offset_top = 468.0
+offset_right = 1920.0
+offset_bottom = 532.0
+theme_override_fonts/font = ExtResource("2_mqh5l")
+theme_override_font_sizes/font_size = 64
+text = "Total Coins: 67"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelCoins" type="Label" parent="."]
+offset_top = 576.0
+offset_right = 1920.0
+offset_bottom = 640.0
+theme_override_fonts/font = ExtResource("2_mqh5l")
+theme_override_font_sizes/font_size = 64
+text = "Current Level Coins: 67"
 horizontal_alignment = 1
 vertical_alignment = 1
