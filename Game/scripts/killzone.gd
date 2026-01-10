@@ -10,7 +10,7 @@ func _on_body_entered(body):
 	body.die()
 	body.get_node("CollisionShape2D").queue_free()
 	var death_screen = preload("res://scenes/death_screen.tscn").instantiate()
-	get_tree().current_scene.add_child(death_screen)
+	get_tree().root.add_child(death_screen)
 	timer.start()
 
 

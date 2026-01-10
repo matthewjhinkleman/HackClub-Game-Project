@@ -226,7 +226,7 @@ script = ExtResource("1_uxtqq")
 first_level = ExtResource("2_imref")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+zoom = Vector2(2.7, 2.7)
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_uxtqq")
