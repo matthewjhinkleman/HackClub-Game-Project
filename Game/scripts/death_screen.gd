@@ -1,7 +1,7 @@
 extends CanvasLayer
 
-@onready var total_coins: Label = $TotalCoins
-@onready var level_coins: Label = $LevelCoins
+@onready var total_coins: Label = $VBoxContainer/TotalCoins
+@onready var level_coins: Label = $VBoxContainer/LevelCoins
 
 func _ready():
 	total_coins.text = "Total Coins: " + str(GameManager.total_score)

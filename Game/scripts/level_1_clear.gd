@@ -1,7 +1,7 @@
 extends Control
 
 @export var next_level: PackedScene
-@onready var level_coins: Label = $LevelCoins
+@onready var level_coins: Label = $CanvasLayer/VBoxContainer/LevelCoins
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
