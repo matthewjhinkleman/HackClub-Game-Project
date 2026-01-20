@@ -8,7 +8,7 @@ extends Control
 func _ready() -> void:
 	Music.play_music(preload("res://assets/music/flowerbed_fields.ogg"))
 	total_coins.text = "Total Coins: " + str(GameManager.total_score)
-	level_coins.text = "Level Coins: " + str(GameManager.level_score) + "/55"
+	level_coins.text = "Level Coins: " + str(GameManager.level_score) + "/75"
 
 func _process(_delta):
 	# Detect input to start game

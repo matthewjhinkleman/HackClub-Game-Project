@@ -1,17 +1,18 @@
-[gd_scene load_steps=22 format=3 uid="uid://tb67cqha6gff"]
+[gd_scene load_steps=23 format=3 uid="uid://tb67cqha6gff"]
 
-[ext_resource type="Script" uid="uid://cvwlmwhutf6wx" path="res://scripts/level_3.gd" id="1_bradm"]
+[ext_resource type="Script" uid="uid://cvwlmwhutf6wx" path="res://scripts/Level/level_3.gd" id="1_bradm"]
 [ext_resource type="PackedScene" uid="uid://c2vmbwumhf48a" path="res://scenes/hud.tscn" id="2_e40mx"]
 [ext_resource type="Texture2D" uid="uid://b0lta5aqtxjaa" path="res://assets/sprites/world_tileset.png" id="3_a114e"]
 [ext_resource type="Texture2D" uid="uid://c0rj1akyxgkum" path="res://assets/sprites/yellow_cloud_white.png" id="4_y1e0c"]
 [ext_resource type="Texture2D" uid="uid://cje6rhks0snmr" path="res://assets/Terrain (16x16).png" id="5_rupth"]
 [ext_resource type="PackedScene" uid="uid://dn02o3cwidlgc" path="res://scenes/player.tscn" id="5_s4dsi"]
-[ext_resource type="PackedScene" uid="uid://c1a230skjekn6" path="res://scenes/killzone.tscn" id="6_07lh1"]
+[ext_resource type="PackedScene" uid="uid://c1a230skjekn6" path="res://scenes/Enemies & Traps/killzone.tscn" id="6_07lh1"]
 [ext_resource type="PackedScene" uid="uid://csxdeo75bftoi" path="res://scenes/coin.tscn" id="7_6uuvf"]
 [ext_resource type="FontFile" uid="uid://bomv61nevcs3s" path="res://assets/fonts/PixelOperator8.ttf" id="9_atr84"]
 [ext_resource type="PackedScene" uid="uid://dwgpu37ogtrkj" path="res://scenes/yellowPlatform.tscn" id="9_qewby"]
-[ext_resource type="PackedScene" uid="uid://c7obbbiv7q8m6" path="res://scenes/greenSlime.tscn" id="11_fh4ka"]
-[ext_resource type="PackedScene" uid="uid://bf4u03wyy2yst" path="res://scenes/level3Clear.tscn" id="13_bradm"]
+[ext_resource type="PackedScene" uid="uid://c7obbbiv7q8m6" path="res://scenes/Enemies & Traps/greenSlime.tscn" id="11_fh4ka"]
+[ext_resource type="PackedScene" uid="uid://fd2qdba0ug3u" path="res://scenes/Enemies & Traps/spikes.tscn" id="12_4ttg5"]
+[ext_resource type="PackedScene" uid="uid://bf4u03wyy2yst" path="res://scenes/Level Clear/level3Clear.tscn" id="13_bradm"]
 [ext_resource type="PackedScene" uid="uid://brlefgtvjoqo7" path="res://scenes/sign.tscn" id="14_yeq8b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
@@ -628,6 +629,66 @@ position = Vector2(1112, -72)
 [node name="Coin55" parent="Coins" instance=ExtResource("7_6uuvf")]
 position = Vector2(1496, -136)
 
+[node name="Coin56" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(1864, -134)
+
+[node name="Coin57" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(1880, -134)
+
+[node name="Coin58" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(1960, -102)
+
+[node name="Coin59" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(1976, -102)
+
+[node name="Coin60" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2056, -71)
+
+[node name="Coin61" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2072, -71)
+
+[node name="Coin62" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2232, -71)
+
+[node name="Coin63" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2216, -71)
+
+[node name="Coin64" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2264, -87)
+
+[node name="Coin65" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2392, -135)
+
+[node name="Coin66" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2408, -135)
+
+[node name="Coin67" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2424, -135)
+
+[node name="Coin68" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2440, -135)
+
+[node name="Coin69" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2408, -148)
+
+[node name="Coin70" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2424, -148)
+
+[node name="Coin71" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2536, -103)
+
+[node name="Coin72" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2568, -87)
+
+[node name="Coin73" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2616, -71)
+
+[node name="Coin74" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2632, -71)
+
+[node name="Coin75" parent="Coins" instance=ExtResource("7_6uuvf")]
+position = Vector2(2648, -55)
+
 [node name="Platforms" type="Node" parent="."]
 
 [node name="yellowPlatform" parent="Platforms" instance=ExtResource("9_qewby")]
@@ -670,9 +731,19 @@ horizontal_alignment = 1
 [node name="greenSlime" parent="Slimes" instance=ExtResource("11_fh4ka")]
 position = Vector2(1240, -59)
 
+[node name="greenSlime2" parent="Slimes" instance=ExtResource("11_fh4ka")]
+position = Vector2(2680, -43)
+
 [node name="Spikes" type="Node" parent="."]
 
-[node name="Cacti" type="Node" parent="."]
+[node name="spikes" parent="Spikes" instance=ExtResource("12_4ttg5")]
+position = Vector2(2600, -72)
+
+[node name="spikes2" parent="Spikes" instance=ExtResource("12_4ttg5")]
+position = Vector2(2488, -120)
+
+[node name="spikes3" parent="Spikes" instance=ExtResource("12_4ttg5")]
+position = Vector2(2313, -104)
 
 [node name="NextLevelSign" parent="." instance=ExtResource("14_yeq8b")]
 position = Vector2(3144, -55)
