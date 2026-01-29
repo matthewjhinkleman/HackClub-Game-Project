@@ -215,7 +215,6 @@ theme_override_font_sizes/font_size = 32
 text = "Level 3 Clear!"
 horizontal_alignment = 1
 vertical_alignment = 2
-autowrap_mode = 2
 
 [node name="TotalCoins" type="Label" parent="CanvasLayer/VBoxContainer"]
 z_index = 1
@@ -251,4 +250,3 @@ text = "Press START to continue
 "
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 2
